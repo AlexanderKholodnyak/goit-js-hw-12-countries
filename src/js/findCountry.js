@@ -13,7 +13,7 @@ function onInputFill(evt) {
     evt.preventDefault();
     const form = evt.target;
     const { value } = form;
-
+    refs.cardContainer.innerHTML = "";
     if (value.length < 1) {
         return;
     }
@@ -36,13 +36,14 @@ function renderCountryCard(countries) {
     }
     if (countries.length <= 10 && countries.length > 1) {
         
-        refs.cardContainer.innerHTML = countriesList(countries);
+       return refs.cardContainer.innerHTML = countriesList(countries);
     }
     if (countries.length === 1) {
         
         refs.cardContainer.innerHTML = countryCard(countries[0]);
     }
     else {
+        
         err.errorNotFound();
     
   }

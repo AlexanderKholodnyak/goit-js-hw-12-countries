@@ -13,13 +13,7 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   text-align: center;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(125, 230, 238, 0.2),
-      rgba(255, 255, 0, 0.2)
-    ),
-    // url(https://upload.wikimedia.org/wikipedia/commons/2/27/Wkipedia_blank_world_map.jpg);
-    url(https://upload.wikimedia.org/wikipedia/commons/f/fc/Composite_map_of_the_world_2012.jpg);
+  background-image: url('./images/map_of_the_world.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
